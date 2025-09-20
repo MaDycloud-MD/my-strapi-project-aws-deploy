@@ -1,7 +1,4 @@
 # Strapi Project Documentation
----
-
-## Part B — Project Documentation (Markdown)
 
 ### Project Overview
 
@@ -119,20 +116,3 @@ terraform apply -auto-approve
 
 ---
 
-## Appendix — Quick Q\&A for Interview
-
-**Q: Why choose Fargate over EC2?**
-A: Fargate removes server management overhead and simplifies scaling for containerized workloads.
-
-**Q: Why Postgres vs SQLite?**
-A: Postgres offers concurrency, durability, and scalability required in production; SQLite is for local dev only.
-
-**Q: How did you secure secrets?**
-A: Used AWS Secrets Manager and injected secrets into ECS task definitions rather than hardcoding.
-
-**Q: Biggest challenge?**
-A: Native binary and build environment mismatches — resolved by building native modules inside the container and ensuring correct platform targets.
-
----
-
-*If you want, I can also export this document as a downloadable markdown file or create a short slide deck summarizing the architecture and challenges.*
