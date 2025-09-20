@@ -109,10 +109,5 @@ terraform apply -auto-approve
 * CI: image build + push to ECR using `docker buildx` for platform targeting.
 * AWS: `terraform apply`, then monitor CloudWatch logs `/ecs/strapi` to verify Strapi boots and connects to DB.
 
-### Outcome & Next Steps
-
-* A reproducible Terraform + Docker deployment pattern for Strapi on AWS Fargate with RDS.
-* Next: add S3 uploads for media, enable HTTPS via ALB+ACM, and lock down SGs for production.
-
 ---
 
